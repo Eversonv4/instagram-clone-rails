@@ -65,3 +65,6 @@ group :development do
   # gem "spring"
 end
 
+
+gem "devise", "~> 4.9"
+gem "devise-i18n", "~> 1.11"
