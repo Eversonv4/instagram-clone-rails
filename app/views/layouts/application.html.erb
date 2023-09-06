@@ -8,9 +8,12 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <!-- toastify css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   </head>
 
-  <body>
+  <body data-flash-messages="<%= JSON.dump(flash.to_a) %>">
     <header>
       <div class="container">
         <nav>
@@ -33,5 +36,8 @@
     </header>
 
     <%= yield %>
+
+    <!-- Toastify script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   </body>
 </html>
