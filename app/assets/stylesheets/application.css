@@ -14,13 +14,14 @@
  *= require_self
  */
 
-@import "toastify-js/src/toastify.css";
+/* @import "toastify-js/src/toastify.css"; */
 
 @import "./reset.css";
 @import "./variables.css";
 @import "./form.css";
 @import "./modal.css";
 @import "./comments.css";
+/* @import "./authentication.css"; */
 
 body {
   background-color: var(--color-white-bis);

@@ -1,4 +1,27 @@
-<p style="color: green"><%= notice %></p>
+<main class="posts-page container">
+  <section class="posts">
+    <% if @posts.any? %>
+      <%= render @posts %>
+    <% else %>
+      Nenhum post ainda.
+    <% end %>
+  </section>
+
+  <aside>
+    sidebar
+
+    <section class="suggestions">
+      <h4>Sugestões Para Você</h4>
+    </section>
+  </aside>
+
+  <footer>
+    &copy; <%= Date.current.year %> INSTAGRAM CLONE
+  </footer>
+</main>
+
+
+<!-- <p style="color: green"><%= notice %></p>
 
 <h1>Posts</h1>
 
@@ -11,4 +34,4 @@
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to "New post", new_post_path %> -->

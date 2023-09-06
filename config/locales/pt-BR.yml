@@ -29,5 +29,14 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+pt-BR:
+  activerecord:
+    attributes:
+      default: &default
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
+
+      post:
+        <<: *default
+        description: "descrição"
+        photo: "Foto"
